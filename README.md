@@ -1,0 +1,2 @@
+- Built this Website in React.
+- Using Locomotive Scroll to provide smooth user experience.
