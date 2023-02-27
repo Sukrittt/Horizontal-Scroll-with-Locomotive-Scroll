@@ -1,0 +1,29 @@
+.gallery-item{
+    z-index: 1;
+    height: 100%;
+
+    .gallery-item-image{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        transition: clip-path 1s cubic-bezier(0.77,0,0.175,1);
+        // clip-path: inset(0% 100% 0% 0%);
+        
+        // &.is-inview{
+        //     transform: scale(3);
+        //     clip-path: inset(0% 0% 0% 0%);
+        //     // clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+        // }
+        .gallery-item-image-inner{
+            background-size: cover;
+            background-position: center;
+            transform-origin: center left;
+            width: 100%;
+            height: 100%;
+            will-change: transform;
+            transform: scale(1.1);
+            transition: transform 2s cubic-bezier(0.77,0,0.175,1); 
+        }
+    }
+}
